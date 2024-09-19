@@ -1,5 +1,7 @@
 function elementBuilder(obj) {
   const element = document.createElement(obj.element);
+
+  // this break up the object into and array of [key, value]
   const entries = Object.entries(obj);
 
   for (let i = 0; i < entries.length; i++) {
